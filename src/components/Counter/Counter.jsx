@@ -1,13 +1,13 @@
 import  {useState} from 'react'
 
-const Counter = () => {
-    const[count, setCount] = useState(0)
+const Counter = ({initialNumber, incrementNumber}) => {
+    const[count, setCount] = useState(initialNumber)
 
     const increment = () =>{
-        setCount(count+1)
+        setCount(count+incrementNumber)
     }
     const decrement = () =>{
-        setCount(count-1)
+        setCount(count-incrementNumber)
     }
   return (
     <div>

@@ -5,7 +5,10 @@ function App() {
 
   return (
     <div>
-<Counter/>
+<Counter
+  initialNumber={14} 
+  incrementNumber={10}
+/>
     </div>
   )
 }
